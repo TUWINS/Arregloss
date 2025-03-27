@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Arregloss {
 
+    public static int T = 25; // tamaño máximo del grupo (variable global)
+
     public static void leerCalificaciones() {
 
     }
@@ -12,6 +14,11 @@ public class Arregloss {
 
     public static void main(String[] args) {
         double[] calificaciones = new double[5];
+        double[] parcial1, parcial2, parcial3, parcial4; // Sólo declarando arreglos
+        double[] promInd;
+        boolean[] aprobados;
+        // declarando y construyendo el arreglo
+
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < calificaciones.length; i++) {
             System.out.println("Escribe calificación [" + i + "]: ");
